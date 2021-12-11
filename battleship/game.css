@@ -1,0 +1,260 @@
+/* GAME SECTION */
+#board-games {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 40rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    
+}
+
+#board-1-list {
+    list-style: none;
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 0rem;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#reset {
+    display: none;
+    border: transparent;
+    background: transparent;
+    color: rgb(170, 94, 94);
+    font: inherit;
+    cursor: pointer;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+}
+
+#reset:hover {
+    color: rgb(194, 61, 61);
+}
+#reset-div {
+    display: flex;
+    justify-content: center;
+}
+#reset {
+    position: fixed;
+    top: 16rem;
+    z-index: 1;
+}
+
+
+#board-2-list {
+    list-style: none;
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.squareb1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 93, 177, 0.7);
+    border-radius: 3px;
+            
+}
+
+.squareb1:hover {
+    transform: scale(110%);
+    background-color: rgb(149, 77, 182);
+}
+
+.squareb2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 159, 88, 0.7);
+    border-radius: 3px;
+
+}
+
+.squareb2:hover {
+    transform: scale(110%);
+    background-color: rgb(202, 173, 29);
+    border-radius: 3px;
+}
+
+
+#grid1-number-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#grid2-number-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-instructions {
+    color: rgb(29, 29, 29);
+    position: fixed;
+    box-sizing: border-box;
+    background: radial-gradient(rgb(235, 235, 235), rgb(244, 240, 245));
+    color: rgb(44, 44, 44);
+    padding: 1rem 0;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+#winner {
+    font-size: 2.8rem;
+    color: rgb(244, 244, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem;
+    background-color:rgb(41, 41, 41);
+    margin-bottom: 1rem;
+
+}
+
+.winner-1{
+    background-color:rgba(145, 64, 182, 0.863) !important;
+
+}
+
+.winner-2{
+    background-color:rgba(211, 180, 23, 0.863) !important;
+}
+
+
+
+
+#turn-banner {
+    padding: .3rem;
+    font-size: 1.8rem;
+    font-weight: bold ;
+    color: rgb(41, 41, 41);
+
+}
+
+#turn {
+    font-size: 1.8rem;
+}
+
+.setup-ships1 {
+    background-color: rgb(149, 77, 182);
+}
+
+.setup-ships2 {
+    background-color: rgb(202, 173, 29);
+}
+
+.missed-ships {
+    background-color: rgba(197, 197, 197, 0.7);
+}
+
+.missed-ships:hover {
+    background-color: rgba(197, 197, 197, 0.7);
+}
+
+.hit-ships {
+    background-color: rgba(197, 44, 44, 0.7);
+
+}
+
+.hit-ships:hover {
+    background-color: rgba(197, 44, 44, 0.7);
+    cursor: default;
+
+}
+
+.sunk-ships {
+    background-color: rgba(29, 29, 29, 0.7);
+   
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.setup {
+    border: 3px solid rgba(197, 197, 197, 0.6);
+}
+
+.attack {
+    border: 3px solid rgba(204, 11, 11, 0.6);
+}
+
+#game-instructions * {
+    text-align: center;
+}
+
+#hitP1,
+#hitP2 {
+    text-align: center;
+    color: rgb(216, 24, 24);
+}
+
+#missed {
+    color: rgb(66, 66, 66);
+}
+#ships-sank{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    top: 11.5rem;
+}
+
+#ships-sunk-on-B1 {
+    color: rgb(149, 77, 182);
+    text-align: center;
+    padding-left: 5rem;
+    text-decoration: line-through;
+}
+
+#ships-sunk-on-B2 { 
+    color: rgb(202, 173, 29);
+    text-align: center;
+    padding-right: 5rem;
+    text-decoration: line-through;
+}
+
+
+
+
+
